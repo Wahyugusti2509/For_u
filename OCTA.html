@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Natal, Perempuan Kesayangan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: url('https://images.pexels.com/photos/2531237/pexels-photo-2531237.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 1);
+      animation: glowText 3s ease-in-out infinite alternate;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 2rem;
+      font-style: italic;
+      letter-spacing: 1px;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 1);
+      animation: fadeInText 2s ease-in-out;
+    }
+
+    @keyframes glowText {
+      0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 1);
+      }
+      100% {
+        text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 50px rgba(255, 255, 255, 1);
+      }
+    }
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .message-container {
+      z-index: 1;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      opacity: 0;
+    }
+
+    /* Hover effect */
+    h1:hover {
+      color: #ff69b4;
+      text-shadow: 0 0 15px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 105, 180, 1);
+    }
+
+    p:hover {
+      color: #ffb6c1;
+      text-shadow: 0 0 15px rgba(255, 182, 193, 0.8), 0 0 30px rgba(255, 182, 193, 1);
+    }
+  </style>
+</head>
+<body>
+  <div class="message-container">
+    <h1>Entah apa jadinya aku tanpamu</h1>
+    <p>Aku selalu mencintaimu octa ☺️</p>
+  </div>
+
+  <!-- YouTube audio embed with hidden iframe (only audio will play) -->
+  <iframe src="https://www.youtube.com/embed/zzFsx1iqcgg?autoplay=1&loop=1&playlist=zzFsx1iqcgg&mute=0" 
+          allow="autoplay" ></iframe>
+</body>
+</html>
